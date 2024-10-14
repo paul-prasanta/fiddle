@@ -37,7 +37,10 @@ public class Users {
 	Long id;
 	
 	String userName;
+	
+	@Convert(converter = CryptoConverter.class)
 	String password;
+	
 	Role role;
 	Date accessTime;
 	
